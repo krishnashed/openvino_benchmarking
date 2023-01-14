@@ -1,0 +1,10 @@
+py-cpuinfo
+numpy
+progress
+opencv-python
+opencv-python-headless
+torch
+torchvision
+matplotlib
+openvino
+openvino-dev

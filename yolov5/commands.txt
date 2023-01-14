@@ -1,0 +1,4 @@
+python benchmark.py -m yolo_v5_fp32.xml -i /home/ubuntu/yolov5/images -api sync -niter 20 >| /home/ubuntu/yolov5/results/openvino_yolo5_with_fp32_tuning.txt
+python benchmark.py -m yolo_v5_int8.xml -i /home/ubuntu/yolov5/images -api sync -niter 20 >| /home/ubuntu/yolov5/results/openvino_yolo5_with_int8_tuning.txt
+
+python y5infer.py --model yolo_v5_fp32.xml --source /home/ubuntu/yolov5/images >| /home/ubuntu/yolov5/results/openvino_yolo5_without_tuning.txt
